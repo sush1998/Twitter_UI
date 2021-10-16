@@ -2,7 +2,7 @@ const tweet=document.querySelector("#tweet")
 const btnTweet=document.querySelector("#btn-tweet")
 const wordLimit=document.querySelector("#word-limit")
 
-let maxLimit=10;
+let maxLimit=100;
 
 function btnTweetStyle(flag,tweetLength)  //change style of btn
 {
@@ -10,6 +10,7 @@ function btnTweetStyle(flag,tweetLength)  //change style of btn
     {
         btnTweet.style.backgroundColor = "#1DA1F2"
         btnTweet.disabled=false;
+        wordLimit.style.color="#000000"
     }
     else if(flag===false)
     {
