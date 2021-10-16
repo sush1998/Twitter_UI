@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <textarea name="twwet" id="tweet" cols="30" rows="10"></textarea>
-    <button id="btn-tweet">Tweet</button>
+    <div class="container"> 
+        <div class="user_info">
+            <div class="user_img">
+                <img src="images/10805272.jpg" alt="Profile pic">
+            </div>
+            <div class="user_details">
+                <p id="user_displayName">Sushant Mahalle</p>
+                <p id="username">@sushantmahalle</p>
+            </div>
+            
+        </div>
+        <div class="main_content">
+            <textarea name="twwet" id="tweet" cols="40" rows="8"></textarea>
+        </div>
+        <div class="buttons">
+            <p id="word-limit"></p>
+            <button id="btn-reset">Reset</button>
+            <button id="btn-tweet">Tweet</button>
+        </div>
+    </div>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
