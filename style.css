@@ -1,0 +1,71 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: fit-content;
+}
+
+.user_info
+{
+    display: flex;
+}
+#user_displayName
+{
+    font-size:1em;
+    font-weight: bolder;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+#username
+{
+    color: rgb(91, 93, 94);
+}
+textarea
+{
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 1em;
+}
+#word-limit
+{
+    font-size: medium;
+    font-weight: 800;
+    border-radius: 50%;
+    margin: 3px;
+}
+.buttons
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+button
+{
+    height: fit-content;
+    width: fit-content;
+    margin: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#btn-tweet
+{
+    background-color: #1DA1F2
+}
+
+.user_img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_img>img{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: 2px solid;
+    margin: auto 0.5em;
+    
+}
