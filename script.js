@@ -1,21 +1,23 @@
 const tweet=document.querySelector("#tweet")
 const btnTweet=document.querySelector("#btn-tweet")
+const wordLimit=document.querySelector("#word-limit")
 
 let maxLimit=10;
 
-function btnTweetStyle(flag)  //change style of btn
+function btnTweetStyle(flag,tweetLength)  //change style of btn
 {
     if(flag===true)
     {
-        btnTweet.style.backgroundColor = 'green'
-        return btnTweet.disabled=false;
+        btnTweet.style.backgroundColor = "#1DA1F2"
+        btnTweet.disabled=false;
     }
     else if(flag===false)
     {
-        btnTweet.style.backgroundColor = 'red'
+        btnTweet.style.backgroundColor = "#657786"
         btnTweet.disabled=true
-        return
+        wordLimit.style.color="red"
     }
+    wordLimit.innerHTML=maxLimit-tweetLength    
 }
 
 tweet.addEventListener("keyup",()=>
@@ -23,7 +25,7 @@ tweet.addEventListener("keyup",()=>
     let tweetLength=tweet.value.split("").length;
     console.log(tweetLength)
     
-    tweetLength<=maxLimit?btnTweetStyle(true):btnTweetStyle(false) //disbale btn
+    tweetLength<=maxLimit?btnTweetStyle(true,tweetLength):btnTweetStyle(false,tweetLength) //disbale btn
 })
 
 btnTweet.addEventListener("click",()=>
